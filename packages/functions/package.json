@@ -1,15 +1,17 @@
 {
-  "name": "worker",
+  "name": "@repo/functions",
   "version": "1.0.0",
   "main": "index.js",
+  "exports": {
+    "*": "./src/index.ts"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@repo/functions": "*",
-    "@repo/redis": "*",
-    "@repo/types": "*"
+    "@repo/typescript-config": "*"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "description": ""

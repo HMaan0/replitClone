@@ -19,7 +19,7 @@ model Project {
   id            String    @id @default(uuid())
   name          String
   language      Languages
-  createdAt     DateTime
+  createdAt     DateTime @default(now()) @db.Timestamptz(6)
   lastUsed      DateTime?
 }
 

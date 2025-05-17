@@ -10,5 +10,17 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "dockerode": "^4.0.6",
+    "express": "^5.1.0",
+    "tar-fs": "^3.0.8",
+    "ws": "^8.18.2"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^3.3.38",
+    "@types/express": "^5.0.2",
+    "@types/tar-fs": "^2.0.4",
+    "@types/ws": "^8.18.1"
+  }
 }
