@@ -8,11 +8,12 @@ ws.on("connection", function connection(socket) {
   socket.on("message", async (message) => {
     const messageString = message.toString("utf-8");
     if (messageString === "files") {
-      const files = await dockerManager.getFileContent("/app/index.js");
-      console.log(files);
+      const files = await dockerManager.listFiles("/app");
+      //console.log(files);
       //socket.send(files)
     }
     if (messageString === "write") {
+      console.log("HELLO");
       const files = await dockerManager.writeFile(
         "/app/index.js",
         `console.log("THIS IS WRITTEN FROM WEBSOCKET")`
